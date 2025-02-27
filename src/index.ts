@@ -1,11 +1,7 @@
 import { env } from "@/env";
-import { Client } from "discord.js";
+import { BaseClient } from "@/lib/BaseClient";
 
-const client = new Client({ intents: [] });
-
-client.on("ready", (readyClient) => {
-  console.log(`Logged in as ${readyClient.user.tag}!`);
-});
+const client = new BaseClient({ intents: [] });
 
 (async () => {
   try {
