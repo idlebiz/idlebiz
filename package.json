@@ -1,0 +1,26 @@
+{
+  "name": "@idlebiz/root",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "format": "biome check --write .",
+    "start": "node --env-file=.env dist/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "mongodb": "^6.13.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.13.5",
+    "tsc-alias": "^1.8.11",
+    "typescript": "^5.7.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["@biomejs/biome"]
+  },
+  "packageManager": "pnpm@10.5.1"
+}
