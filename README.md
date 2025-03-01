@@ -1,4 +1,4 @@
-## Getting Start
+## Getting Started
 
 This section provides a quick-start guide.
 
