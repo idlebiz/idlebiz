@@ -1,12 +1,11 @@
 import { env } from "@/env";
 import { mongo } from "@/lib/mongo";
-import type { ChangeStream, ChangeStreamDocument } from "mongodb";
+import type { ChangeStream, ChangeStreamDocument, ResumeToken } from "mongodb";
 
 // TODO: fill in collections we wanna watch for changes
 const collections: string[] = [];
 let streams: Record<string, ChangeStream> = {};
-// biome-ignore lint/suspicious/noExplicitAny: temporary
-const resumeTokens: Record<string, any> = {};
+const resumeTokens: Record<string, ResumeToken> = {};
 
 export async function sync() {
   const db = (await mongo()).db(env.MONGO_DATABASE);
