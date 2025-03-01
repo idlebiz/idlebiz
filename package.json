@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "build": "tsc && tsc-alias",
+    "cmd:register": "node --env-file=.env dist/register.js",
     "format": "biome check --write .",
     "start": "node --env-file=.env dist/index.js"
   },
