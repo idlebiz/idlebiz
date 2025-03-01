@@ -15,3 +15,7 @@ This section provides a quick-start guide.
 3. Install the dependencies with `pnpm i`.
 4. Run `pnpm run build` to build the application.
 5. Run `pnpm run start` to start the application.
+
+### Support 
+
+<a target="_blank" href="https://discord.gg/JE846Eyusz"><img src="https://discord.com/api/guilds/1342305136545894430/embed.png?style=banner2" alt="Discord"></a>
