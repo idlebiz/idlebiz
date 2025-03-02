@@ -2,8 +2,7 @@ import { env } from "@/env";
 import { mongo } from "@/lib/mongo";
 import type { ChangeStream, ChangeStreamDocument, ResumeToken } from "mongodb";
 
-// TODO: fill in collections we wanna watch for changes
-const collections: string[] = [];
+const collections = ["buildings", "materials", "settings"];
 let streams: Record<string, ChangeStream> = {};
 const resumeTokens: Record<string, ResumeToken> = {};
 
